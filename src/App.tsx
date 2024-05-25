@@ -1,22 +1,24 @@
 import "./App.css";
 // import { Routes, Route } from "react-router-dom";
-import { Header } from "./component/Header";
+// import { Header } from "./component/Header";
 // import Home from "./component/Home";
 // import Encrypt from "./component/Encrypt";
 //import FileEncrypt from "./component/FileEncrypt";
-import Decrypt from "./component/Decrypt";
-
+//import Decrypt from "./component/Decrypt";
+import Signin from "./auth/Signin";
+//import Signup from "./auth/Signup";
 function App() {
 	return (
 		<>
-			<Header />
+			{/* <Header /> */}
 			{/* <FileEncrypt /> */}
-			<Decrypt />
+			{/* <Decrypt /> */}
 			{/* 
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/encrypt" element={<Encrypt />} />
 			</Routes> */}
+			<Signin />
 		</>
 	);
 }

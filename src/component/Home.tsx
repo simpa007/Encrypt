@@ -6,7 +6,7 @@ const Home = () => {
 				<h1 className="text-3xl font-bold w-1/2 mx-auto">
 					Encrypt and decrypt files without ever sending them to a server
 				</h1>
-				<p className="w-[40%] mx-auto text-xl mt-4">
+				<p className="w-[40%] mx-auto text-lg mt-4">
 					XFile is a free web app that allows you to encrypt and decrypt files
 					with complete privacy. Your files are never sent to our servers, so no
 					one can access them except for you.

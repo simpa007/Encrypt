@@ -22,7 +22,7 @@ const Encrypt = () => {
 		<section className="container w-1/2 mx-auto mt-24">
 			<div>
 				<h1 className="text-2xl font-bold">Encrypt files</h1>
-				<p className="text-xl my-6">
+				<p className="text-lg my-6">
 					Drag and drop your files here, or click to browse.
 				</p>
 			</div>
