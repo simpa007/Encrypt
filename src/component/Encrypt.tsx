@@ -1,18 +1,19 @@
-import {useState, useRef } from "react";
+import { useState, useRef } from "react";
 const Encrypt = () => {
 	const [file, setFile] = useState("");
-	const inputFile = useRef(null);
+	const inputFile = useRef<any>(null);
 
-	const handleFileUpload = (e : any) => {
+	const handleFileUpload = (e: any) => {
 		const { files } = e.target;
 		if (files && files.length) {
 			const filename = files[0].name;
-	  
+
 			var parts = filename.split(".");
 			const fileType = parts[parts.length - 1];
 			console.log("fileType", fileType); //ex: zip, rar, jpg, svg etc.
-	  
+
 			setFile(files[0]);
+		}
 	};
 
 	const onButtonClick = () => {

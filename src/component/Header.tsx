@@ -19,7 +19,7 @@ export const Header = () => {
 					Pricing
 				</Link>
 				<button className="bg-blue-600 py-2 px-4 rounded-xl text-white hover:bg-blue-200 hover:text-black">
-					<Link to="sign-in">Sign in</Link>
+					<Link to="/signin">Sign in</Link>
 				</button>
 			</div>
 		</header>

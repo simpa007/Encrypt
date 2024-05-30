@@ -3,8 +3,10 @@ import { FaGoogle, FaApple } from "react-icons/fa";
 import { GoLock } from "react-icons/go";
 import { BsEyeSlash } from "react-icons/bs";
 import { CiAt } from "react-icons/ci";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Signin = () => {
+	const { loginWithRedirect } = useAuth0();
 	return (
 		<>
 			<div className="mt-12 text-center">
@@ -59,7 +61,10 @@ const Signin = () => {
 							<div className="font-semibold text-sm">Forgot Password?</div>
 						</div>
 
-						<button className="w-full border py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-400">
+						<button
+							onClick={() => loginWithRedirect()}
+							className="w-full border py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-400"
+						>
 							Sign in
 						</button>
 					</div>
@@ -67,7 +72,7 @@ const Signin = () => {
 				<p className="mt-8 font-semibold text-sm text-center">
 					You haven't any account?{" "}
 					<span className="text-blue-600 ml-3">
-						<Link to="#">Sign up</Link>
+						<Link to="/signup">Sign up</Link>
 					</span>
 				</p>
 			</div>

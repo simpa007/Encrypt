@@ -13,8 +13,8 @@ const Home = () => {
 				</p>
 			</div>
 			<div className="mt-8 space-x-4">
-				<button className="bg-blue-600 py-2 px-4 rounded-xl text-white">
-					<Link to="#">Get Started</Link>
+				<button className="bg-blue-600 py-2 px-4 rounded-xl text-white hover:bg-blue-200 hover:text-black">
+					<Link to="/signup">Get Started</Link>
 				</button>
 				<button className="bg-neutral-200 py-2 px-4 rounded-xl text-black">
 					<Link to="#">Learn More</Link>

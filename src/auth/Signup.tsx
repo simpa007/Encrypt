@@ -70,7 +70,7 @@ const Signup = () => {
 				<p className="mt-8 font-semibold text-sm text-center">
 					Already have an account?{" "}
 					<span className="text-blue-600 ml-3">
-						<Link to="/sign-up">Sign in</Link>
+						<Link to="/signin">Sign in</Link>
 					</span>
 				</p>
 			</div>
